@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Villena | Profolio</a>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute('href').substring(1); // Get the section ID
+            const targetSection = document.getElementById(targetId); // Find the section element
+
+            targetSection.scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling effect
+            });
+        });
+    });
+</script>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\My.Profile.jpg" alt="My Photo">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Villena</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Passionate about creativity and innovation. I specialize in photography, videography, web design, and development. My goal is to bring your ideas to life with unique and customized solutions.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Laire.Neil.C.Villena" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/laire.neil.villena/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Neil18482" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/laire_neil" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="https://www.facebook.com/Laire.Neil.C.Villena" class="btn" target="_blank">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Offering front-end and back-end development services, including website design, coding, and maintenance. I use HTML, CSS, JavaScript, React, and Node.js to create responsive and functional websites.</p>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+    
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography</h3>
+                <p>Specialized in capturing high-quality photographs for events, portraits, and commercial use. Let me bring your vision to life with professional photography services.</p>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+    
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Videography</h3>
+                <p>Offering professional video production services. From shooting to editing, I provide high-quality video content that suits your needs.</p>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+    
+            <div class="service">
+                <div class="service-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>I design user-centric websites and apps, ensuring a great user experience with beautiful UI designs.</p>
+                <a href="#contact" class="contact-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <!-- Photography Section -->
+            <div class="skill">
+                <div class="skill-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography</h3>
+                <p>Skilled in capturing high-quality photographs. Click on the images to view my work on Facebook!</p>
+                <div class="media">
+                    <!-- Gallery of 4 images with links to Facebook -->
+                    <div class="image-gallery">
+                        <a href="https://www.facebook.com/share/p/zmnBMyVpdkqzDB68/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo.jpg" alt="Photography Portfolio 1" class="gallery-img">
+                        </a>
+                        <a href="https://www.facebook.com/share/p/P8LhAcxf8j6mjQKJ/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo2.jpg" alt="Photography Portfolio 2" class="gallery-img">
+                        </a>
+                        <a href="https://www.facebook.com/share/p/asfLfoFQx5YYzxUg/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo3.jpg" alt="Photography Portfolio 3" class="gallery-img">
+                        </a>
+                        <a href="https://www.facebook.com/share/p/Jf7Ufv1GMUfMcNjk/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo4.jpg" alt="Photography Portfolio 4" class="gallery-img">
+                        </a>
+                    </div>
+                    <div class="cta-button">
+                        <a href="https://www.facebook.com/LaireShots" class="btn" target="_blank">Visit My Facebook Page</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Videography Section -->
+            <div class="skill">
+                <div class="skill-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Videography</h3>
+                <p>Skilled in capturing high-quality videos. Click on the videos to view them on YouTube or Facebook!</p>
+                <div class="media">
+                    <!-- Video Gallery with links to YouTube or Facebook -->
+                    <div class="video-gallery">
+                        <a href="https://www.facebook.com/share/v/CXueHtCDNWuABMWu/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\video.jpg" alt="Videography Project 1" class="video-thumbnail">
+                        </a>
+                        <a href="https://www.facebook.com/share/v/pP4wsnzbq7vKbZTo/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\video2.jpg" alt="Videography Project 2" class="video-thumbnail">
+                        </a>
+                        <a href="https://www.facebook.com/share/v/efPhc9qEs7yiWJkZ/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\video3.jpg" alt="Videography Project 3" class="video-thumbnail">
+                        </a>
+                        <a href="https://www.facebook.com/share/v/nvESBo2uM6ZuC8F4/" target="_blank">
+                            <img src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\video4.jpg" alt="Videography Project 4" class="video-thumbnail">
+                        </a>
+                    </div>
+                    <div class="cta-button">
+                        <a href="https://www.facebook.com/LaireShots/videos" class="btn" target="_blank">Visit My Video Channel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  
+    <p class="quote">Education is not the learning of facts, but the training of the mind to think.</p>
+  
+    <div class="box-container">
+  
+      <!-- Elementary School -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\School.jpg" alt="Tambulilid Elementary">
+        </div>
+        <div class="content">
+          <h3>Elementary School</h3>
+          <p>Tambulilid Elementary School</p>
+          <h4>2009 - 2015</h4>
+        </div>
+      </div>
+  
+      <!-- High School -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\School2.jpg" alt="Linao High School">
+        </div>
+        <div class="content">
+          <h3>High School</h3>
+          <p>Linao National High School</p>
+          <h4>2015 - 2019</h4>
+        </div>
+      </div>
+  
+      <!-- College -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\School3.jpg" alt="EVSU">
+        </div>
+        <div class="content">
+          <h3>College</h3>
+          <p>Eastern Visayas State University, Ormoc City</p>
+          <h4>2019 - Present</h4>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+  <!-- education section ends -->
+  
+
+    
+    
+    
+    
+    
+    
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+    <h1 class="heading"><i class="fas fa-briefcase"></i> My <span>Experience</span></h1>
+  
+    <p class="quote">Experience is the teacher of all things.</p>
+  
+    <div class="box-container">
+
+      <!-- Multimedia Organization -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\org.jpg" alt="Multimedia Organization">
+        </div>
+        <div class="content">
+          <h3>Multimedia Organization</h3>
+          <p>Active member of an organization focused on multimedia projects.</p>
+          <h4>Skills: Photography, Videography, Editing, Coding</h4>
+        </div>
+      </div>
+
+      <!-- Photography -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo5.jpg" alt="Photography">
+        </div>
+        <div class="content">
+          <h3>Photography</h3>
+          <p>Experience in capturing events and moments with professional cameras.</p>
+          <h4>Events, Portraits, Product Photography</h4>
+        </div>
+      </div>
+
+      <!-- Videography & Editing -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\photo6.jpg" alt="Videography">
+        </div>
+        <div class="content">
+          <h3>Videography & Editing</h3>
+          <p>Skilled in filming and editing videos for various purposes, including vlogs and short films.</p>
+          <h4>Video Editing Software: Adobe Premiere, Final Cut Pro</h4>
+        </div>
+      </div>
+
+      <!-- Coding -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\code.jpg" alt="Coding">
+        </div>
+        <div class="content">
+          <h3>Coding</h3>
+          <p>Experience in web development, focusing on HTML, CSS, JavaScript, and backend technologies.</p>
+          <h4>Skills: HTML, CSS, JavaScript, Python, MySQL</h4>
+        </div>
+      </div>
+      <!-- Graphic Design -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\design.jpg" alt="Graphic Design">
+        </div>
+        <div class="content">
+          <h3>Graphic Design</h3>
+          <p>Skilled in creating visuals for websites, marketing materials, and social media.</p>
+          <h4>Tools: Adobe Photoshop, Illustrator</h4>
+        </div>
+      </div>
+      <!-- Crypto Trading -->
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="C:\Users\Laire Neil Villena\Desktop\HTML\portfolio\pictures\Crypto Trading.jpeg" alt="Crypto Trading">
+        </div>
+        <div class="content">
+          <h3>Crypto Trading</h3>
+          <p>Experience in trading various cryptocurrencies, including Bitcoin and Ethereum.</p>
+          <h4>Exchanges: Binance, Coinbase, Crypto Wallet Management</h4>
+        </div>
+      </div>
+    </div>
+  
+</section>
+<!-- experience section ends -->
+
+
+  
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+
+    <h1 class="heading"><i class="fas fa-envelope"></i> Get in <span>Touch</span></h1>
+
+    <p class="quote">Feel free to reach out for any inquiries, collaborations, or questions.</p>
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>If you have any questions or would like to get in touch, feel free to use the form below or contact me through the information provided.</p>
+            <ul>
+                <li><strong>Email:</strong> laireneilcabusas.villena@gmail.com</li>
+                <li><strong>Phone:</strong> +63 9639120102</li>
+                <li><strong>Social:</strong> Facebook: Laire Neil Cabusas Villena</li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="submit-form.php" method="POST">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+<!-- contact section ends -->
+
+
+    <script>
+        const typingText = document.querySelector('.typing-text span');
+        const words = ["PhotoGrapher", "VideoGrapher", "Web Designer", "Editor", "Developer"];
+        let index = 0;
+
+        function changeWord() {
+            typingText.textContent = words[index];
+            index = (index + 1) % words.length;
+        }
+        setInterval(changeWord, 2000);
+    </script>
+
+</body>
+</html>
