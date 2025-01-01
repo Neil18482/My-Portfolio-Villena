@@ -4,41 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- Add FontAwesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Portfolio Website</title>
 </head>
 <body>
 
-<header>
-    <a href="#home" class="logo">Villena | Portfolio</a>
-    <nav>
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-</header>
-
+    <header>
+        <a href="#" class="logo">Villena | Profolio</a>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
 <script>
-    // Smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute('href').substring(1); // Get the section ID
+            const targetSection = document.getElementById(targetId); // Find the section element
 
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+            targetSection.scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling effect
+            });
         });
     });
 </script>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="pictures/My.Profile.jpg" alt="My Photo">
+        </div>
         <div class="home-content">
             <h1>Hi, It's <span>Villena</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
